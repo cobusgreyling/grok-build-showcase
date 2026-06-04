@@ -1,7 +1,6 @@
 import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
-import { IgnoreMatcher } from '../utils/ignore.js';
-import { discoverSkills, parseSkillFile, validateSkill } from './skill-parser.js';
+import { discoverSkills, validateSkill } from './skill-parser.js';
 import { AuditReport, AuditFinding } from './reporter.js';
 
 export interface AuditOptions {
@@ -20,7 +19,6 @@ export interface AuditSignals {
 
 export async function auditProject(opts: AuditOptions): Promise<AuditReport> {
   const root = path.resolve(opts.target);
-  const matcher = await IgnoreMatcher.fromFiles(root);
 
   const signals: AuditSignals = {
     agentsMd: { present: false },
