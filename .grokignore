@@ -1,0 +1,53 @@
+# .grokignore
+# Patterns for files/directories Grok Build should skip when reading/searching
+# (reduces context bloat and improves speed/privacy). Syntax is the same as .gitignore.
+# This file is committed so the whole team benefits.
+
+# Dependencies & build (almost always irrelevant to agent)
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Logs, sessions, caches (Grok internal + app)
+.grok/sessions/
+.grok/logs/
+.grok/upload_queue/
+.grok/marketplace-cache/
+*.log
+logs/
+
+# Secrets & env (never read these)
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Large binaries / assets / media (waste tokens)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+*.pdf
+*.zip
+*.tar.gz
+*.bin
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Test fixtures that are intentionally minimal or contain "bad" examples
+# (the auditor will still target specific fixtures when testing)
+tests/fixtures/minimal-project/**
+
+# Temporary
+tmp/
+temp/
+*.tmp

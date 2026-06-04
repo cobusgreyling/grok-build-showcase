@@ -1,0 +1,63 @@
+{
+  "name": "grok-build-showcase",
+  "version": "0.1.0",
+  "description": "A living, executable showcase and practical toolkit for Grok Build (xAI). Includes reusable skills, exemplary AGENTS.md, a Grok-readiness auditor CLI, and demonstrations of Plan Mode, subagents, and skill-driven workflows.",
+  "keywords": [
+    "grok",
+    "grok-build",
+    "xai",
+    "showcase",
+    "cli",
+    "skills",
+    "agentic",
+    "ai-agents",
+    "plan-mode",
+    "subagents"
+  ],
+  "author": "Built with Grok Build",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "gbs": "./dist/cli.js",
+    "grok-build-showcase": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    ".grok"
+  ],
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cobusgreyling/grok-build-showcase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cobusgreyling/grok-build-showcase/issues"
+  },
+  "homepage": "https://github.com/cobusgreyling/grok-build-showcase#readme"
+}
