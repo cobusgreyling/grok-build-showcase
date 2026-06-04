@@ -13,6 +13,8 @@ This repository was **created from scratch** using Grok 4.3 and the Grok Build C
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node](https://img.shields.io/badge/Node-20+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 
+**→ https://github.com/cobusgreyling/grok-build-showcase**
+
 ---
 
 ## Why This Project?
