@@ -84,7 +84,7 @@ This is what a **well-configured Grok Build project** looks like:
     └── readiness-scorer/     # Scores and explains Grok-friendliness
 ```
 
-See [`.grok/AGENTS.md`](.grok/AGENTS.md) for the full rule set (coding standards, mandatory verification, git discipline, when to use Plan Mode, subagent delegation strategy, etc.).
+See [`AGENTS.md`](AGENTS.md) (repo root) for the full rule set (coding standards, mandatory verification, git discipline, when to use Plan Mode, subagent delegation strategy, etc.). The `.grok/skills/` directory holds the version-controlled, reusable skills.
 
 The skills are real, version-controlled, and load with highest priority when you run Grok inside this repo.
 
