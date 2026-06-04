@@ -76,8 +76,8 @@ gbs demo subagents
 This is what a **well-configured Grok Build project** looks like:
 
 ```
+AGENTS.md                     # Project rules (loaded automatically — root level)
 .grok/
-├── AGENTS.md                 # Project rules (loaded automatically)
 └── skills/
     ├── project-auditor/      # Encodes how to perform deep project audits
     ├── skill-crafter/        # High-quality skill generator (used to create the others)
